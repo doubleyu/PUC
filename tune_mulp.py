@@ -101,7 +101,7 @@ if __name__ == '__main__':
                     #     for gamma in gamma_set:
                     exp = exp + 1
 
-                    command = f'taskset -c {exp} python main_synthetic_ptonet.py --train_bs={train_bs} --lr={lr} --num_layers={num_layers}' 
+                    command = f'python main_synthetic_ptonet.py --train_bs={train_bs} --lr={lr} --num_layers={num_layers}' 
                     # command = f'taskset -c {exp} python main_criteo_ptonet.py --alpha={alpha} --beta={beta} --num_layers={num_layers}' 
                     # command = f'taskset -c {exp} python main_lzd_ptonet.py --train_bs={train_bs} --lr={lr} --num_layers={num_layers} --h_dim={h_dim}' 
 
